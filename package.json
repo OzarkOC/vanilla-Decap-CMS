@@ -2,9 +2,10 @@
   "name": "vanilla-decap-cms",
   "version": "1.0.0",
   "description": "a super simple [netlifly-cms](https://www.netlifycms.org/) starter. To make this work for you, you will need to [authenticate](https://www.netlifycms.org/docs/add-to-your-site/#authentication) your app at [netlify](https://www.netlify.com/)<br>",
-  "main": "main.js",
+  "default": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "keywords": [
     "Decap",
