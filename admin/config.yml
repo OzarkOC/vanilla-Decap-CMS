@@ -4,13 +4,14 @@ backend:
 media_folder: "media"
 public_folder: "media"
 publish_mode: editorial_workflow
+local_backend: true
 collections:
   - label: "About"
     name: "about"
     files:
-    - label: "About"
-      name: "info"
-      format: 'json'
-      file: "content/about.json"
-      fields:
-        - {label: "Message", name: message, widget: string}
+      - label: "About"
+        name: "info"
+        format: "json"
+        file: "content/about.json"
+        fields:
+          - { label: "Message", name: message, widget: string }
